@@ -1,0 +1,157 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Kosugi Maru', sans-serif; /* anime font */
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+}
+
+
+body {
+  background: rgb(20,1,24);
+  background: radial-gradient(circle, rgba(20,1,24,1) 0%, rgba(16,16,26,1) 100%);
+  color: #fff;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(20,1,24);
+  background: radial-gradient(circle, rgba(20,1,24,1) 0%, rgba(16,16,26,1) 100%);
+  padding: 24px 14%;
+  transition: .3s;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* Navbar */
+span {
+  color: #9370DB;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar a {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px 20px;
+}
+
+.navbar a:hover {
+  color: #9370DB;
+  border-bottom: 2px solid #9370DB;
+  transition: .3s;
+}
+
+#menu-icon {
+  font-size: 28px;
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
+}
+
+/* Home Section */
+section {
+  padding: 120px 14%;
+}
+
+.home {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 6rem;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+  width: 100%;  
+}
+
+.home-img img {
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+}
+
+.home-text h5 {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 0 0 20px;
+}
+
+.home-text h1 {
+  color: #fff;
+  font-size: #fff;
+  font-weight: 700;
+  margin: 0 0 20px;
+  line-height: 1;
+}
+
+.home-text h6 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.social i{
+  color: #fff;
+  font-size: 20px;
+  margin-right: 10px;
+  transition: 0.5s;
+}
+
+.social i:hover{
+  color: #9370DB;
+  transform: rotate(360deg);
+}
+
+/* Media query for mobile devices with screen size up to 768px */
+@media (max-width: 768px) {
+  header {
+    padding: 18px 3%;
+  }
+  #menu-icon {
+    display: block;
+  }
+
+  .home {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    margin-top: 80px;
+    height: auto;
+    text-align: center;
+    padding: 50px 3%;
+  }
+  .home-img img {
+    width: 100%;
+    height: auto;
+  }
+  .home-text h5 {
+    font-size: 20px;
+  }
+  .home-text h1 {
+    font-size: 2.5rem;
+  }
+  .home-text h6 {
+    font-size: 14px;
+  }
+
+}
+

@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kosugi Maru', sans-serif; 
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+  }
+  
+  body {
+    background: rgb(20,1,24);
+    background: radial-gradient(circle, rgba(20,1,24,1) 0%, rgba(16,16,26,1) 50%);
+    color: #fff;
+  }
+  
+  /* Header */
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(16,16,26,1) 50%;
+    padding: 24px 14%;
+    transition: .3s;
+  }
+  
+    .logo {
+        color: #fff;
+        font-size: 1.8rem;
+        font-weight: 600;
+      }
+
+  /* Navbar */
+  .navbar {
+    display: flex;
+  }
+  
+  .navbar a {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 20px;
+  }
+  
+  .navbar a:hover {
+    color: #9370DB;
+    border-bottom: 2px solid #9370DB;
+    transition: .3s;
+  }
+  
+  
+  /* Home Section */
+  section {
+    padding: 120px 14%;
+  }
+  
+  
+  /* Contact Section */
+  .contact {
+    text-align: center;
+  }
+  
+  .contact-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .contact-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4.2rem;
+  }
+  
+  .contact-form form {
+    position: relative;
+    width: 550px;
+  }
+  
+  form input, 
+  form textarea {
+    width: 100%;
+    padding: 20px;
+    outline: none;
+    border: none;
+    background: #0b0b13;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+  }
+  
+  form input::placeholder, 
+  form textarea::placeholder {
+    color: #ffffffcc;
+  }
+  
+  textarea {
+    height: 200px;
+    resize: none;
+  }
+  
+  form .send-btn {
+    background: #9370DB;
+    color: #fff;
+    box-shadow: 4px 4px #fff;
+    display: inline-block;
+    padding: 0 25px;
+    line-height: 42px;
+    border: 1px solid transparent;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    transition: ease all 0.35s;
+    margin-top: 5px;
+  }
+  
+  form .send-btn:hover {
+    background: #fff;
+    color: #9370DB;
+    box-shadow: 4px 4px #9370DB;
+  }
+
+  
+  
+
+
+  
